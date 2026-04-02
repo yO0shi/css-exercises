@@ -2,7 +2,8 @@
   font-family: monospace;
   background: papayawhip;
   display: flex;
-  justify-items: center;
+  /* justify-items: center; this has to be space-between */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -14,7 +15,7 @@
   padding: 4px 32px;
   align-content: center;
   margin: 10px;
-  flex: 2;
+  flex: 1;
   text-align: center;
 }
 
@@ -22,14 +23,17 @@ ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
   display: flex;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
 }
 
-li{
+/* li{
   margin: 4px;
   display: flex;
   justify-content: space-between;
-}
+  flex: 2;
+} */
 
 a {
   font-size: 22px;
@@ -39,10 +43,3 @@ a {
   text-decoration: none;
 }
 
-.left-links
-{
-  flex: 1;
-}
-.right-link{
-  flex: 1;
-}
