@@ -6,19 +6,20 @@ body {
 .card {
   width: 400px;
   background: #fff;
-  padding: 10px;
+  padding: 10px; 
   margin: 16px auto;
 }
 
 .title {
   background: #e3f4ff;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px; 
 }
 
 .content {
   background: #e3f4ff;
-  padding: 10px;
+  /* It doesn't need to be accurate about padding number */
+  padding: 16px 8px; 
 }
 
 .button-container {
@@ -26,11 +27,16 @@ body {
   margin-top: 10px;
   padding: 10px;
   text-align: center;
-  display: block;
+  /* display: block; its not needed*/
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* watch the details carefully, the padding is diff. */
   padding: 10px;
+  /* here its needed lol 
+  so its because button is a inline element, 
+  its need to make display block*/
+  display: block;
 }

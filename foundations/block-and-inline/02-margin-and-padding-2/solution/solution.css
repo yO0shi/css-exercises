@@ -46,7 +46,8 @@ We separated it out here to make it extra clear what has changed. */
 
 .content {
   margin-bottom: 8px;
-  padding: 16px 8px;
+  padding: 16px 8px; 
+
 }
 
 .button-container {
